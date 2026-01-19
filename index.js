@@ -1,5 +1,5 @@
    fname = "tv.html";
-    if (fs.existsSync("./" + req.url) && fs.lstatSync("./frontend/" + req.url).isFile()) {
+    if (fs.existsSync("./" + req.url) && fs.lstatSync("./" + req.url).isFile()) {
         data = fs.readFileSync("./" + req.url);
         fname = req.url;
     } else {
