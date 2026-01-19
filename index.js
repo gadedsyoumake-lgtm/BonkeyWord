@@ -8,4 +8,3 @@
     fname.endsWith(".js") ? res.writeHead(200, { "Content-Type": "text/javascript" }) : res.writeHead(200, {});
     if(!req.url.includes("../")) res.write(data);
     res.end();
-});
